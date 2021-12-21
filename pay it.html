@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pay</title>
+</head>
+<body style="background-color:violet;">
+<style>
+.form1{
+width:100px;
+}
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:maroon;
+	color:white;
+	width: 40%;
+	margin-left: 30%;
+	box-shadow: 0 2px 2px 0 #000000;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: purple;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:pink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+text-decoration:none;
+}
+
+
+
+</style>
+
+<div class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="trending.html">TRENDING</a> 
+  <div class="dropdown">
+    <button class="dropbtn">SHOP 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="girls.html">GIRLS</a>
+      <a href="boys.html">BOYS</a>
+    </div>
+  </div> 
+  <a href="about us.html">ABOUT US</a>
+  <a href="contact us.html">CONTACT US</a>
+</div>
+
+ <center>
+<h2 style="font-size:100px; color:maroon">pay form</h2>
+
+
+
+<form method="post" action="process.php" enctype="" class="form1">
+<label>first name</label>
+<input type="text" name="fname" placeholder="please enter your first name">
+<label>last name</label>
+<input type="text" name="lname" placeholder="please enter your lastname">
+<label>phone number</label>
+<input type="number" name="phone number" placeholder="please enter phone number">
+<label>email</label>
+<input type="email" name="email" placeholder="please enter your email">
+<l abel>location</label>
+<input type="text" name="location" placeholder="please enter your location place">
+<label>size of shoes</label>
+<input type="text" name="s of shoes" placeholder="please enter your size of shoes">
+<label>number of clothes</label>
+<input type="text" name="no of clothes" placeholder="please enter your number of clothes">
+<label>pay methods</label>
+<select>
+<option>pay method</option>
+<option>M-pesa</option>
+<option>Tigopesa</option>
+<option>halopesa</option>
+<option>airtelmoney</option>
+<option>mastercard</option>
+</select>
+
+
+<input type="submit" value="send">
+</form>
+
+
+</body>
+</html>
